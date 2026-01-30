@@ -16,6 +16,11 @@ Shared Swift package providing common utilities for all Swift projects.
 Changelog format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+**Before writing to CHANGELOG.md:**
+1. Check for new release tags: `git tag --sort=-creatordate | head -1`
+2. Release tags are prefixed with `v` (e.g., `v2.0.1`)
+3. If a new tag exists that isn't in CHANGELOG.md, create a new version section with that tag's version and date, moving relevant [Unreleased] content under it
+
 ## Additional Guides
 - Swift 6 concurrency: `~/Agents/Guides/swift6-concurrency-guide.md`
 - Swift 6 migration (compact): `~/Agents/Guides/swift6-migration-compact-guide.md`
