@@ -8,10 +8,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-01-24
 
 ### Added
-
-- Initial release of DZFoundation framework
-- `DZLog(_:function:line:)` - Debug logging with function name and line number
-- `DZErrorLog(_:function:line:file:)` - Conditional error logging with file context
-- Both functions are no-ops in release builds for zero production overhead
-- Support for macOS 14.0+, iOS 17.0+
-- Swift 6 compatibility
+- Initial release with `DZLog` and `DZErrorLog` debug logging helpers; both compile to no-ops in release builds.
+- Support for macOS 14+ and iOS 17+ with Swift 6.
