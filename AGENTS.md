@@ -30,6 +30,7 @@ Local Apple API documentation is available at:
 ```
 
 ## Build & Test Commands
+**MANDATORY:** Never write build output into the project directory; pass `--scratch-path` pointing outside the project tree instead of relying on the default `.build` folder.
 ```bash
 # Build
 swift build
