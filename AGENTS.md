@@ -16,10 +16,6 @@ Shared Swift package providing common utilities for all Swift projects.
 Changelog format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Additional Guides
-- Swift 6 concurrency: `~/Agents/Guides/swift6-concurrency-guide.md`
-- Swift 6 migration (compact): `~/Agents/Guides/swift6-migration-compact-guide.md`
-
 ## API Documentation
 Local Apple API documentation is available at:
 `~/Agents/API Documentation/Apple/`
