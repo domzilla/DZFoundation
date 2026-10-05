@@ -15,19 +15,27 @@ Read these in full before touching the matching code:
 - Swift style (`.swift`): `~/Agents/Style/swift-swiftui-style-guide.md`
 - Accessibility (UI code, XIBs, storyboards): `~/Agents/Guides/accessibility-guide.md`
 
+## Localization
+- The package has no localizations
+
 ## Build Commands
-Never write build output into the project directory; pass `--scratch-path` pointing outside the project tree instead of relying on the default `.build` folder.
+Always pass `--scratch-path /tmp/DZFoundation-build`.
 ```bash
 # Build
-swift build
+swift build --scratch-path /tmp/DZFoundation-build
 
 # Clean
-swift package clean
+swift package clean --scratch-path /tmp/DZFoundation-build
 ```
 
-A pre-commit hook automatically formats staged Swift files.
+The local pre-commit hook (`.git/hooks/pre-commit`) formats staged Swift files.
 
 ## Testing (MANDATORY)
 ```bash
-swift test
+# macOS
+swift test --scratch-path /tmp/DZFoundation-build
+
+# iOS Simulator
+xcodebuild test -scheme DZFoundation \
+  -destination 'platform=iOS Simulator,name=<available iPhone>'
 ```
