@@ -9,9 +9,11 @@ Shared Swift package providing common utilities for all Swift projects.
 - **Platforms**: macOS, iOS
 
 ## Guides (MANDATORY)
-- Swift style: `~/Agents/Style/swift-swiftui-style-guide.md`
-- Accessibility: `~/Agents/Guides/accessibility-guide.md`
-- Xcode projects: `~/Agents/Guides/xcode-project-guide.md`
+Read `~/Agents/Guides/xcode-project-guide.md` in full before planning or editing anything.
+
+Read these in full before touching the matching code:
+- Swift style (`.swift`): `~/Agents/Style/swift-swiftui-style-guide.md`
+- Accessibility (UI code, XIBs, storyboards): `~/Agents/Guides/accessibility-guide.md`
 
 ## Build Commands
 Never write build output into the project directory; pass `--scratch-path` pointing outside the project tree instead of relying on the default `.build` folder.
