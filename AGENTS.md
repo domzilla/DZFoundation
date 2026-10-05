@@ -4,46 +4,28 @@
 Shared Swift package providing common utilities for all Swift projects.
 
 ## Tech Stack
-- **Language**: Swift 6
+- **Language**: Swift
 - **Type**: Swift Package
-- **Platforms**: macOS 14.0+, iOS 17.0+
+- **Platforms**: macOS, iOS
 
-## Style & Conventions (MANDATORY)
-**Strictly follow** the Swift/SwiftUI style guide: `~/Agents/Style/swift-swiftui-style-guide.md`
+## Guides (MANDATORY)
+- Swift style: `~/Agents/Style/swift-swiftui-style-guide.md`
+- Accessibility: `~/Agents/Guides/accessibility-guide.md`
+- Xcode projects: `~/Agents/Guides/xcode-project-guide.md`
 
-## Changelog (MANDATORY)
-**All important user facing changes** (fixes, additions, deletions, changes) must be written to CHANGELOG.md.
-Changelog format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## API Documentation
-Local Apple API documentation is available at:
-`~/Agents/API Documentation/Apple/`
-
-```bash
-~/Agents/API\ Documentation/Apple/search --help  # Run once per session
-~/Agents/API\ Documentation/Apple/search "Bundle" --language swift
-```
-
-## Build & Test Commands
-**MANDATORY:** Never write build output into the project directory; pass `--scratch-path` pointing outside the project tree instead of relying on the default `.build` folder.
+## Build Commands
+Never write build output into the project directory; pass `--scratch-path` pointing outside the project tree instead of relying on the default `.build` folder.
 ```bash
 # Build
 swift build
-
-# Run tests
-swift test
 
 # Clean
 swift package clean
 ```
 
-## Code Formatting (MANDATORY)
-**Always run SwiftFormat after changes:**
-```bash
-swiftformat .
-```
-
 A pre-commit hook automatically formats staged Swift files.
 
-**Do not commit unformatted code.**
+## Testing (MANDATORY)
+```bash
+swift test
+```
